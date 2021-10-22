@@ -1,0 +1,17 @@
+#lang racket
+
+;------ Factorial ------
+(define (factorial num)
+  (cond ((zero? num) 1)
+  (else
+   (* num (factorial (- num 1))))))
+
+
+;------ Fibonacci ------
+(define (fibonacci num)
+  (cond ((equal? num 0) 0)
+        ((equal? num 1) 1)
+        (else (+ (fibonacci (- num 1)) (fibonacci (- num 2)))
+    )))
+
+(fibonacci 16)

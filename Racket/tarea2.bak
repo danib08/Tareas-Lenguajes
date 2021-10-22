@@ -1,0 +1,10 @@
+#lang racket
+
+; Arbol
+(define (arbol centro izq der)
+  ( cond ((and (null? izq) (null? der))
+         centro)
+   
+  ( else
+    (list centro izq der))))
+
